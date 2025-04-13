@@ -2,9 +2,9 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import "./index.css";
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
+import SignUp from "./pages/signup/Signup";
 import { Toaster } from "react-hot-toast";
 import { useAuthContext } from "./context/AuthContext";
-import SignUp from "./pages/signup/Signup";
 
 function App() {
   const { authUser } = useAuthContext();
