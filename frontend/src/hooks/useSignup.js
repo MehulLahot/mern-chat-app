@@ -37,7 +37,6 @@ const useSignup = () => {
       });
 
       const data = await res.json();
-      console.log("data is", data);
       if (data.error) {
         throw new Error(data.error);
       }
@@ -53,8 +52,6 @@ const useSignup = () => {
   return { loading, signup };
 };
 export default useSignup;
-
-
 
 function handleInputErrors({
   fullName,

@@ -1,5 +1,6 @@
-import path from "path";
 import dotenv from "dotenv";
+dotenv.config();
+import path from "path";
 
 import express from "express";
 import cookieParser from "cookie-parser";
@@ -14,8 +15,6 @@ import { app, server } from "./socket/socket.js";
 const PORT = process.env.PORT || 8000;
 
 const __dirname = path.resolve();
-
-dotenv.config();
 
 app.use(express.json()); //to parse the incoming requests with JSON payloads (from req.body)
 app.use(cookieParser());
